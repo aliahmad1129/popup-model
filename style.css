@@ -1,0 +1,81 @@
+ body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      width: 100vw;
+      box-sizing: border-box;
+      background: linear-gradient(135deg, rgb(211, 215, 19) 10%, rgb(94, 31, 57) 100%);
+    }
+
+    .open {
+      position:absolute;
+      left: 50%;
+      top: 50%;
+      padding: 0 20px;
+      border-radius: 4px;
+      font-size: 2rem;
+      color: rgb(20, 20, 20);
+      transform: translate(-50%, -50%);
+      outline: none;
+      /* z-index: 2; */
+      border: 1px solid #3d3d3d;
+      background-color: #c9c9c9;
+      transition: all 150ms;
+    }
+    .open:hover {
+      color: rgb(5, 43, 0);
+      outline: none;
+      border: 1px solid #196d00;
+      background-color: #abff96;
+      cursor: pointer;
+      transform: translate(-50%, -50%) scale(1.1);
+      
+    }
+
+    .popup {
+      padding: 1rem;
+      border-radius: 8px;
+      overflow: hidden;
+      display: none;
+      height: 70vh;
+      width: 70vw;
+      box-shadow: 2px 2px 12px rgb(37, 37, 37);
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      background: linear-gradient(135deg, rgb(234, 116, 247) 0%, rgb(73, 5, 59) 100%);
+    }
+    
+    .active {
+      display: block;
+    }
+
+    .popup > h1 {
+      text-align: center;
+      font-size: 4rem;
+    }
+
+    .popup > p {
+      text-align: center;
+      margin: 0;
+      font-size: 10rem;
+    }
+
+    .close {
+      margin-right: 4px;
+      border: 1px solid #ff2424;
+      transition: all 200ms ease-in;
+      border-radius: 4px;
+      background-color: #ff6d6d;
+      
+    }
+    .close:hover {
+      background-color: #ff9797;
+      border: 1px solid #ff0000;
+      transform: scale(1.1);
+    }
+
+    .close-p {
+      text-align: right;
+    }
